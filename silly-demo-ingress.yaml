@@ -1,0 +1,11 @@
+apiVersion: kro.run/v1alpha1
+kind: Application
+metadata:
+  name: silly-demo
+spec:
+  name: silly-demo
+  image: ghcr.io/vfarcic/silly-demo
+  tag: "1.4.305"
+  ingress:
+    enabled: true
+    host: silly-demo.127.0.0.1.nip.io
